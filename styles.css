@@ -1,0 +1,81 @@
+body {
+  background: #212121;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.stopwatch-container {
+  background: #333;
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  margin-top: 3rem;
+  width: 350px;
+}
+
+.display {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: #222;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: #009688;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background: #00796b;
+}
+
+.laps {
+  margin-top: 1rem;
+}
+
+.laps h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#laps-list {
+  list-style: decimal inside;
+  padding-left: 0;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+#laps-list li {
+  background: #444;
+  margin-bottom: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
